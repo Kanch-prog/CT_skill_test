@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .header {
+    width: auto;
+    height: 100vh;
+    background: url('images/BannerWLos.png') no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+
+  .logo {
+    position: absolute;
+    top: 1rem;
+    left: 20%;
+    transition: transform 0.5s;
+  }
+
+  .navbar {
+    position: absolute !important;
+    top: 1rem;
+    right: 14%;
+  }
+  
+  .navbar-link {
+    font-size: 12px;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: 0 3rem;
+    color: #fefeff;
+    transition: transform 0.5s;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  
+  .logo:hover,
+  .navbar-link:hover {
+    transform: scale(1.2);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .sticky-nav {
+    height: 6.7rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .logo2 {
+    position: absolute;
+    top: 1rem;
+    left: 20%;
+    transition: transform 0.5s;
+  }
+    
+  .navbar-sticky {
+    position: absolute;
+    top: 2rem;
+    right: 16%;
+  }
+  
+  .navbar-link-sticky {
+    font-size: 12px;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: 0 3rem;
+    color: #414f6b;
+    transition: transform 0.5s;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-bottom: 1px solid #414f6b;
+    text-decoration: none;
+    letter-spacing:1px;
+  }
+
+  .logo2:hover,
+  .navbar-link-sticky:hover {
+    transform: scale(1.2);
+    color: #414f6b;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.history {
+    width: 100%;
+    height: 127vh;
+    background: url('images/Bg.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.history-content {
+    width: 65%;
+}
+
+.history-title {
+    margin-top: 5rem;
+}
+
+.title {
+    left: 20%;
+}
+
+.history-text {
+    flex-direction: column;
+    width: 90%;
+    font-size: 16px;
+    left: 10%;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 300;
+    margin-left: 6rem;
+}
+
+.carousel-bg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: rgba(65, 79, 107, 0.85);
+    bottom: 0;
+    padding: 48px;
+}
+  
+  .carousel-item a {
+    cursor: default;
+  }
+  
+  .thumb-container {
+    position: relative;
+    width: 57%;
+    text-align: center;
+    left: 22%;
+}
+
+.thumbnail {
+    margin: 0 0.3rem;
+    display: inline-block; 
+}
+
+.thumbnail img {
+    height: auto; 
+    width: 100%;
+    max-width: 100%;
+}
+
+.blog .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -20%;    
+    gap: 3px;
+}
+
+.blog .carousel-indicators:hover {
+    cursor: pointer;
+}
+
+.blog .carousel-indicators li {
+    background: rgba(231, 231, 231, 0.3);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+    background: white;
+}
+
+  .climb {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+
+    .climb-content {
+        position: relative;
+        left: 18%;
+    }
+
+    .climb-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        margin: 2rem 0;
+    }
+
+    .climb-img {
+        width: auto; 
+        height: auto; 
+        margin-right: 4rem;
+    }
+
+    .climb-text {
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        font-weight: 300;
+        width: 45%;
+    }
+
+    .tabs-container {
+        width: 100%;
+        background-color: #414f6b;
+    }
+  
+  .tab-content {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  .tab-bg1 {
+    background: url('images/tab1.png') no-repeat;
+    background-size: cover;
+    height: 80%;
+    position: relative;
+    background-position: bottom;
+  }
+  .tab-bg2 {
+    background: url('images/tab2.png') no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    background-position: bottom;
+  }
+  
+  .schedule-container {
+    position: absolute;
+    top: 15%;
+    left: 16%;
+    z-index: 1;
+  }
+  
+  .nav-tabs .nav-link {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    left: 138%;
+    color: rgb(175, 182, 197);
+    letter-spacing: -0.1rem;
+  }
+  
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    color: #414f6b;
+    background-color: rgb(175, 182, 197) !important;
+    border-color: #414f6b !important;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 1px;
+    letter-spacing: -0.1rem;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .schedule {
+    margin: 3rem 0 1rem 5.4rem;
+    transform: scale(1.1);
+  }
+ 
+  
+  .footer {
+    background-color: #414f6b;
+    height: 6.7rem;
+    width: 100%;
+    position: relative;
+}
+
+.logo3 {
+    position: relative;
+    top: 1rem;
+    left: 20%;
+    transition: transform 0.5s;
+}
+
+  @media (max-width: 768px) {
+    .thumb-container {
+        width: 100%;
+        left: 0;
+    }
+    .carousel-bg {
+        padding: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .accordion {
+        display: none;
+    }
+
+    .nav-tabs {
+        display: flex !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .tabs-container {
+    display: none;
+  }
+
+  #myTabContent {
+    display: none;
+  }
+
+  .schedule-container img {
+    display: none;
+  }
+
+  .accordion-item:first-of-type .accordion-button,
+  .accordion-button:not(.collapsed),
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    font-size: 3rem;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #414f6b;
+    color: white;
+  }
+
+  .accordion-bg1 {
+    background: url('images/tab1.png') no-repeat;
+    background-size: cover;
+    height: 80%;
+    background-position: bottom;
+  }
+  .accordion-bg2 {
+    background: url('images/tab2.png') no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: bottom;
+  }
+}
